@@ -18,6 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
+# Enable Android GO
+$(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults_common.mk)
+
 # Inherit from A6020 device
 $(call inherit-product, device/lenovo/A6020/device.mk)
 
